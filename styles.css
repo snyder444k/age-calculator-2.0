@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: poppins;
+}
+
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./Verdant.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.container {
+    background-color:transparent;
+    width: 75%;
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    display: none;
+}
+
+.app {
+    
+    width: 60%;
+    min-width: 50%;
+    background-color: hsl(0, 100%, 100%);
+    border-radius: 16px;
+    border-bottom-right-radius: 35%;
+    padding: 6%;
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+   
+}
+
+form {
+    display: flex;
+    gap: 2.5vw;
+    font-size: 0.8rem;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+    gap: 3%;
+    align-items: flex-start;
+}
+
+form div input {
+    padding:4.5%;
+    width: 6.2vw;
+    border-radius: 5px;
+    border: 2px solid  hsl(0, 0%, 90%);
+    font-size: 1.3vw;
+    font-weight: bold;
+    text-indent: 0.7vw;
+    color: hsl(0, 0%, 0%);
+    outline: none;
+    margin-top: 3px;
+}
+
+ form div input:focus {
+    border-color: hsl(259, 100%, 65%);;
+ }
+
+
+  form div input::placeholder {
+     color: hsl(0, 1%, 58%);
+  }
+
+  form div input:hover{
+    border-color: hsl(259, 100%, 65%);
+  }
+
+form div label {
+    font-size: 0.9vw;
+    font-weight: 650;
+    color: hsl(0, 1%, 44%);
+    letter-spacing: 2px;
+}
+
+input[type="number"]::-webkit-inner-spin-button {
+    display: none;
+}
+
+.btn {
+    margin-top: 4%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+    }
+
+.btn .first-hr {
+    background-color:  hsl(0, 0%, 90%);
+    opacity: 0.3;
+    width: 600px;
+    height: 2px;
+}
+
+.btn img {
+    background-color: hsl(259, 100%, 65%);
+    padding: 1vw;
+    border-radius: 50%;
+    height: 1em;
+    cursor: pointer;
+    font-size: 1.5vw;
+}
+
+.btn img:active {
+    background-color:  hsl(0, 0%, 0%);
+}
+
+#display p {
+    font-weight: bolder;
+    font-size: 4vw;
+    line-height: 1.1;
+}
+
+
+#display span {
+    color:  hsl(259, 100%, 65%);
+}
+
+.error {
+    color: hsl(0, 100%, 67%);
+    font-size: 0.65vw;
+    font-weight: 400;
+    
+}
+
+.sec-hr{
+    display: none;
+}
+
+
+
+@media (max-width: 1000px) {
+
+
+.app {
+    
+    width: 70%;
+    min-width: 50%;
+    background-color: hsl(0, 100%, 100%);
+    border-radius: 16px;
+    border-bottom-right-radius: 35%;
+    padding: 7%;
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+
+   
+}
+
+
+
+.btn img {
+    background-color: hsl(259, 100%, 65%);
+    padding: 1.5vw;
+    border-radius: 50%;
+    height: 2em;
+    cursor: pointer;
+    font-size: 2vw;
+    
+}
+
+.btn {
+    font-size: 20px;
+}
+
+
+
+
+form div input {
+    padding:8%;
+    width: 9vw;
+    border-radius: 5px;
+    border: 2px solid  hsl(0, 0%, 90%);
+    font-size: 1.8vw;
+    font-weight: bold;
+    text-indent: 0.7vw;
+    color: hsl(0, 0%, 0%);
+    outline: none;
+    margin-top: 3px;
+}
+
+
+#display p {
+    font-weight: bolder;
+    font-size: 7vw;
+    line-height: 1.1;
+}
+
+
+form div label {
+    font-size: 1.8vw;
+    font-weight: 650;
+}
+
+
+.container {
+    height: 100vh;
+    background-color: hsl(0, 0%, 94%);
+}
+
+
+form  {
+    gap: 5vw;
+}
+
+.title {
+    display: block;
+    margin-bottom: 20px;
+    color:hsl(259, 100%, 65%) ;
+    font-size: 5.5vw;
+}
+
+.error {
+    color: hsl(0, 100%, 67%);
+    font-size: 1vw;
+    font-weight: 400;
+    
+}
+
+
+
+    .btn {
+        margin-top: 8%;
+        margin-bottom: 3%;
+    }
+
+   .btn .first-hr {
+    background-color:  hsl(0, 0%, 90%);
+    opacity: 0.3;
+    width: 200px;
+    height: 2px;
+   }
+
+   .sec-hr {
+    display: block;
+    width: 200px;
+   }
+
+}

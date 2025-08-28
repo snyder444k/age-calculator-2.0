@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Generator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Age Calculator 2.0</h1>
+        <div class="app">
+            <form>
+                <div>
+                    <label for="day" class="label">DAY</label>
+                    <input type="number" id="day" class="userinput" min="1" max="31" placeholder="DD">
+                    <i><p id="dayerror" class="error"></p></i>
+                </div>
+
+                <div>
+                   <label for="month" class="label">MONTH</label>
+                    <input type="number" id="month" class="userinput" max="12" placeholder="MM">
+                    <i><p id="montherror" class="error"></p></i>
+                </div>
+                
+                <div>
+                     <label for="year" class="label">YEAR</label>
+                    <input type="number" id="year" class="userinput" min="1900" max="" pattern="\d{4}" placeholder="YYYY">
+                   <i><p id="yearerror" class="error"></p></i>
+                </div>
+
+            </form>
+
+            <div class="btn">
+                <hr class="first-hr">
+                <img src="./icon-arrow.svg" alt="" id="submit">
+                <hr class="sec-hr">
+            </div>
+
+            <div id="display">
+                <i><p><span id="ojo">- -</span> years</p></i>
+                <i><p><span id="oshu">- -</span> months</p></i>
+                <i><p><span id="ori">- -</span> days</p></i>
+
+
+            </div>
+        </div>
+    </div>
+ 
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="./index.js"></script>
+</body>
+</html>
